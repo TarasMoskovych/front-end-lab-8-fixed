@@ -113,6 +113,8 @@ form {
     margin: 5px 0; }
   form input, form textarea {
     padding: 5px; }
+  form label, form button {
+    text-transform: uppercase; }
   form button {
     margin-top: 5px;
     transition: 0.6s;
