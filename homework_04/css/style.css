@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;}
+
+.container{
+    width: 100%;  
+    font-family: 'Open Sans', sans-serif;}
+
+.layout{
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 3% 5% 0 5%;}
+
+.white{
+    color: #fff;}
+
+.flex{    
+    display: flex;}
+
+.grid{
+    display: grid;}
+
+.align-center{
+    text-align: center;}
+
+.justify{
+    text-align: justify;}
+
+.weight-normal{
+    font-weight: normal;}
+
+.weight-bold{
+    font-weight: bold;}
+
+.button{
+    background-color: rgba(0,0,0,0.5);
+    font-size: 0.9em;
+    transition: 1s;}
+
+.button:hover{
+    background-color: rgba(240,240,240,0.6);
+    color:#000;
+    cursor: pointer;}
+
+a{
+    text-decoration: none;}
+
+input:focus{
+    outline: none;
+    box-shadow: inset 0 0 2px #000;}
+
+
+/** header **/
+header{
+    background: url(../img/apples.jpg) center no-repeat;
+    background-size: cover;
+    padding-bottom: 100px;
+    background-attachment: fixed;}
+
+header .flex{    
+    display: flex;
+    justify-content: space-between;}
+
+header nav{
+    margin-right: 50px;}
+
+header p, header a{
+    font-size: 0.9em;}
+
+header p:first-child{
+    letter-spacing: 3px;}
+
+header .item{
+   align-self: center;}
+
+header a{   
+    padding: 0 5px 10px 5px;
+    margin: 0 25px;}
+
+header a:hover{
+    border-bottom: 2px solid #A3B0BC;}
+
+header h1{
+    margin-top: 15%;
+    font-size: 2.8em;
+    letter-spacing: 10px;
+    margin-left: 30px;}
+
+header h1 span:first-child{
+    font-family: 'Fanwood Text', serif;
+    font-size: 2em;}
+
+header h1 span:last-child{
+    font-size: 0.5em;
+    vertical-align: super;}
+
+header .layout>p{
+    padding-bottom: 13%;}
+
+header .button{
+    display: block;
+    margin: 0 auto;
+    width: 140px;
+    padding: 18px 30px;
+    border: 2px solid #fff;
+    font-size: 0.9em;}
+
+header .button:hover{
+    border: 2px solid #999;}
+
+
+/** main **/
+/** top **/
+.top .flex{
+    justify-content:space-between;}
+
+.top{
+    padding: 80px 0 140px 0;}
+
+.top p, .top .flex div{
+    width: 90%;}
+
+.top .item{
+    align-self: flex-start;}
+
+.top .flex div p{
+    font-size: 1.4em;
+    text-align: left;}
+
+.top .flex div p:first-child{
+    margin-bottom: 5px;}
+
+.top p:last-child{
+    font-size: 0.9em;
+    text-align: justify;}
+
+
+/** middle **/
+.middle{
+    background-color: #F3F3F3;
+    padding-bottom: 160px;}
+
+.middle .layout>h2{
+    font-size: 1.55em;
+    margin: 80px 0;}
+
+.middle .flex{
+    display: flex;
+    justify-content: space-between;}
+
+.middle .box{
+    position: relative;
+    margin: 1em;}
+
+.middle .item1 .middle .item3{
+    margin-left: 0;}
+
+.middle .item2, .middle .item4{
+    margin-right: 0;}
+
+.middle .box img{
+    transition: 0.8s;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;}
+
+.middle .box .likes{
+    background-color: #625F60;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 8px 12px;
+    border: 2px solid #fff;
+    z-index: 1;
+    transition: 1.5s;}
+
+.middle .box div span{
+    font-size: 0.9em;}
+
+.middle .box p{
+    font-size: 1.2em;
+    position: absolute;
+    margin-top: -55px;
+    left: 30px;
+    text-shadow: 2px 2px 5px black;
+    z-index: 1;}
+
+.middle .box:hover img{ 
+    border: 1px solid #333;
+    -webkit-filter: contrast(120%);  
+     transform: scale(1.01);}
+
+.middle .box:hover .likes{
+    border: 2px solid #555;
+    background-color: #fff;
+    color:#000;}
+
+.middle .box:hover .likes span{
+    color:#000;}
+
+.middle .newsletter{
+    padding: 7% 8% 6% 8%;
+    margin-top: 8%;
+    background-color: #fff;}
+
+.middle .newsletter .outer{
+     grid-template-columns: 50% 50%;}
+
+.middle .newsletter .item{
+    align-self:center;}
+
+.middle .newsletter .inner{
+    grid-template-columns: 60% 30%;}
+
+.middle .newsletter p{
+    font-size: 1.4em;}
+
+.middle .newsletter input{
+    margin-left: 5px;
+    background-color: #F3F3F3; 
+    height: 4em;
+    font-size: 0.85em;
+    padding: 1% 5%;
+    border: 1px solid #4E5051;
+    color: #000;}
+
+.middle .newsletter input::placeholder{
+    color: #000;}
+
+.middle .newsletter .button{
+    font-size: 1em;
+    position: relative;
+    left: -2px;
+    background-color: #343638;
+    border: none;}
+
+.middle .newsletter .button:hover{
+    background-color: #BBBBBB;
+    border: 1px solid #000;}
+
+
+/** bottom **/
+.bottom{
+    padding: 80px 0;}
+
+.bottom .flex{
+    justify-content: space-between;}
+
+.bottom .flex>div:not(:last-child){
+    padding-right: 20px;
+    width: 20%;}
+
+.bottom .flex>div:last-child{
+    width: 25%;}
+
+.bottom h3{
+    margin-bottom: 9%;
+    font-size: 1.2em;}
+
+.bottom a{
+    display: block;}
+
+.bottom a:hover{
+    text-decoration: underline;
+    color:#888;}
+
+.bottom p, .bottom a{
+    color: #A4A4A4;
+    font-size: 0.825em;
+    padding-bottom: 3%;}
+
+.bottom p{
+    line-height: 1.8em;}
+
+.bottom p.justify{
+    padding-right: 20%;}
+
+.bottom .tweet p:nth-child(2){
+    font-style: italic;
+    line-height: 1.5em;}
+
+.bottom .tweet p:nth-child(3){
+    color: #DBDBDB;
+    margin-top: 2%;}
+
+.bottom .bigger{
+    font-size: 0.88em;
+    margin-top: -10px;}
+
+.bottom .flex div:last-child p{
+    padding-bottom: 10%;}
+
+.bottom .grid{
+    grid-template-columns: 60% 35%;}
+
+.bottom input{
+    background-color: #F3F3F3; 
+    font-size: 0.8em;
+    height: 3.2em;
+    padding: 2% 10%;
+    border: 1px solid #343638;
+    color: #757588;
+    font-style: italic;}
+
+.bottom .button{
+    position: relative;
+    left: -0.1em;
+    font-size: 0.8em;
+    border: 1px solid #343638;
+    background-color: #343634;}
+
+.bottom .button:hover{
+    border: 1px solid #000;
+    background-color: #BBBBBB;}
+
+
+/** footer **/
+footer{
+    padding-bottom: 2%;}
+
+footer hr{
+    border: none;     
+    background-color: #F0F0F0; 
+    height: 2px;}
+
+footer .flex{
+    margin-top: 3%;
+    justify-content: space-between;}
+
+footer p, footer a{
+    font-size: 0.85em;}
+
+footer p{
+    color: #9E9E9E;}
+
+footer a{
+    margin-left: 25px;
+    padding: 0 5px 5px 5px;
+    color: #000;}
+
+footer a:hover{
+    color:#ccc;}
+
+footer .item{
+    align-self: center;}
