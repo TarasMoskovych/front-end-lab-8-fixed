@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;}
+
+.wrapper{
+    max-width: 85%;
+    margin: 0 auto;
+    padding: 25px 10% 10px 10%;}
+
+.flex{
+    display: flex;}
+
+.grid{
+    display: grid;}
+
+a{
+    text-decoration: none;}
+
+
+/** header **/
+header .flex{
+    justify-content: flex-start;}
+
+header nav{
+    margin: 15px 0 0 40px;}
+
+header a{
+    color: #333;
+    font-weight: bold;
+    margin: 0 8px;
+    text-transform: uppercase;
+    font-size: 1.2em;}
+
+header a:hover{
+    color: #39c2d7;}
+
+
+/** main **/
+main .banner{
+    margin-top: 5px;
+    background: url(../img/banner.jpg) no-repeat center;
+    background-size: cover;
+    height: 32vw;}
+
+main h1{
+    padding-top: 25px;
+    color:#fff;
+    width: 10em;
+    font-size: calc(1vw + 2em);
+    font-weight: bold;
+    line-height: 1.25em;}
+
+main .grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 1.5em;
+    grid-row-gap: 1.5em;
+    margin: 0 auto;}
+
+main .content .wrapper{
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;}
+
+main .content .item{
+    padding: 4%;
+    padding-bottom: 6%;
+    background-color: #CCCCCC;
+    transition: 0.5s;}
+
+main .content .description h3{
+    padding: 2% 0;
+    color: #333;}
+
+main .content .description p{
+    color:#464547;
+    font-size: 0.96em;
+    font-weight: bold;}
+
+main .content img{
+    width: 100%;}
+
+main .content .item:hover{
+    background-color: #39c2d7;}
+
+
+/** footer **/
+footer{
+    background-color: #39c2d7;
+    padding-bottom: 0.5em;}
+
+footer ul{
+    list-style-type: none;
+    display: flex;}
+
+footer a, footer p{
+    color: #fff;
+    font-weight: bold;}
+
+footer a{
+    text-decoration: underline;
+    color: #fff;
+    margin-right: 20px;}
+
+footer a:hover{
+    text-decoration: none;
+    color: #fff;}
+
+
+@media screen and (max-width: 900px) {
+    
+    header .flex{
+        flex-direction: column;
+        align-items: center;}
+    
+    header nav{
+        margin: 20px 0 10px 0;}
+    
+    main h1{
+        width: 90%;
+        text-align: center;
+        font-size: 2em;
+        margin: 0 auto;}
+    
+    main .grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;}
+    
+    main .content .wrapper{
+        padding: 1.5em;
+        max-width: 100%;}
+    
+    main .content .item .img{
+        padding: 0 8% 0 8%;}
+
+    footer .flex{
+        flex-direction: column;
+        align-items: center;}
+    
+    footer ul{
+        margin-bottom: 20px;}
+    
+    footer ul li a{
+        margin: 0 12px;}
+}
+
+
+@media screen and (max-width: 575px) {
+    
+    .wrapper{
+        max-width: 100%;
+        padding: 0;}
+    
+    header .flex{
+        flex-direction: column;
+        align-items: flex-start;}
+    
+    header .item{
+        margin: 0;}
+    
+    header .logo{
+        margin: 20px auto 10px;}
+    
+    header .logo img{
+        height: 40px;}
+    
+    header nav{    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #CCCCCC;
+        width: 100%;}
+    
+    header nav a{
+        margin: 0;
+        padding: 10px 0 10px 0;
+        display: inline-block;
+        border-top: 1px solid #999;
+        width: 100%;
+        align-self: flex-start;}
+    
+    header a span{
+        padding-left: 20px;}
+    
+    main .banner{   
+        margin: 0;
+        display: flex;
+        align-items: flex-end;
+        height: 45vw;}
+    
+    main h1{
+        font-size: calc(1.5vw + 0.8em);
+        text-align: left;
+        background-color: #39c2d7;
+        padding: 0.7em;}
+    
+    main .wrapper{
+        padding: 1.5em;}
+    
+    main .grid{
+        grid-template-columns: 1fr;}
+    
+    footer .wrapper{
+        padding: 1em 0;}
+    
+    footer ul{
+        display: inline-block;
+        text-align: center;}
+    
+    footer ul li{
+        padding: 2% 0;}
+    
+    footer ul li a{
+        margin: 0;}
+    
+     footer p, footer a{
+        font-size: 0.9em;}
+}
