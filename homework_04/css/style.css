@@ -1,37 +1,46 @@
 *{
     margin: 0;
-    padding: 0;}
+    padding: 0;
+}
 
 .container{
     width: 100%;  
-    font-family: 'Open Sans', sans-serif;}
+    font-family: 'Open Sans', sans-serif;
+}
 
 .layout{
     max-width: 1190px;
     margin: 0 auto;
-    padding: 40px 40px 0 40px;}
+    padding: 40px 40px 0 40px;
+}
 
 .white{
-    color: #fff;}
+    color: #fff;
+}
 
 .flex{    
-    display: flex;}
+    display: flex;
+}
 
 .align-center{
-    text-align: center;}
+    text-align: center;
+}
 
 .justify{
-    text-align: justify;}
+    text-align: justify;
+}
 
 .uppercase{
     text-transform: uppercase;
 }
 
 .weight-normal{
-    font-weight: normal;}
+    font-weight: normal;
+}
 
 .weight-bold{
-    font-weight: bold;}
+    font-weight: bold;
+}
 
 .button{
     background-color: rgba(0,0,0,0.5);
@@ -41,10 +50,12 @@
 .button:hover{
     background-color: rgba(240,240,240,0.6);
     color:#000;
-    cursor: pointer;}
+    cursor: pointer;
+}
 
 a{
-    text-decoration: none;}
+    text-decoration: none;
+}
 
 input:focus{
     outline: none;
@@ -57,7 +68,8 @@ header{
     background: url(../img/apples.jpg) center no-repeat;
     background-size: cover;
     padding-bottom: 100px;
-    background-attachment: fixed;}
+    background-attachment: fixed;
+}
 
 header .flex{    
     display: flex;
@@ -74,34 +86,42 @@ header .flex nav{
 }
 
 header p, header a{
-    font-size: 0.9em;}
+    font-size: 0.9em;
+}
 
 header p:first-child{
-    letter-spacing: 3px;}
+    letter-spacing: 3px;
+}
 
 header a{   
     padding: 0 5px 10px 5px;
-    margin: 0 25px;}
+    margin: 0 25px;
+}
 
 header a:hover{
-    border-bottom: 2px solid #A3B0BC;}
+    border-bottom: 2px solid #A3B0BC;
+}
 
 header h1{
     margin-top: 180px;
     font-size: 2.85em;
     letter-spacing: 10px;
-    margin-left: 30px;}
+    margin-left: 30px;
+}
 
 header h1 span:first-child{
     font-family: 'Fanwood Text', serif;
-    font-size: 2em;}
+    font-size: 2em;
+}
 
 header h1 span:last-child{
     font-size: 0.5em;
-    vertical-align: super;}
+    vertical-align: super;
+}
 
 header .layout>p{
-    padding-bottom: 13%;}
+    padding-bottom: 13%;
+}
 
 header .button{
     transition: 1s;
@@ -110,10 +130,12 @@ header .button{
     width: 165px;
     padding: 18px 30px;
     border: 2px solid #fff;
-    font-size: 0.9em;}
+    font-size: 0.9em;
+}
 
 header .button:hover{
-    border: 2px solid #999;}
+    border: 2px solid #999;
+}
 
 
 /** main **/
@@ -128,11 +150,13 @@ header .button:hover{
 }
 
 .top p, .top .flex div{
-    flex-basis: 48%;}
+    flex-basis: 48%;
+}
 
 .top .flex div p{
     font-size: 1.5em;
-    text-align: left;}
+    text-align: left;
+}
 
 .top .flex div p:first-child{
     padding-bottom: 5px;
@@ -140,13 +164,15 @@ header .button:hover{
 
 .top p:last-child{
     font-size: 0.87em;
-    text-align: justify;}
+    text-align: justify;
+}
 
 
 /** middle **/
 .middle{
     background-color: #F3F3F3;
-    padding-bottom: 180px;}
+    padding-bottom: 180px;
+}
 
 .middle .layout>h2{
     font-size: 1.55em;
@@ -181,7 +207,8 @@ header .button:hover{
     transition: 0.8s;
     height: 100%;
     width: 100%;
-    border: 1px solid #fff;}
+    border: 1px solid #fff;
+}
 
 .middle .box .likes{
     background-color: #625F60;
@@ -191,10 +218,12 @@ header .button:hover{
     padding: 8px 12px;
     border: 2px solid #fff;
     z-index: 1;
-    transition: 1.5s;}
+    transition: 1.5s;
+}
 
 .middle .box div span{
-    font-size: 0.9em;}
+    font-size: 0.9em;
+}
 
 .middle .box p{
     font-size: 1.2em;
@@ -202,7 +231,8 @@ header .button:hover{
     margin-top: -55px;
     left: 30px;
     text-shadow: 2px 2px 5px black;
-    z-index: 1;}
+    z-index: 1;
+}
 
 .middle .gradient{
     transition: 0.8s;
@@ -221,10 +251,12 @@ header .button:hover{
 .middle .box:hover .likes{
     border: 2px solid #555;
     background-color: #fff;
-    color:#000;}
+    color:#000;
+}
 
 .middle .box:hover .likes span{
-    color:#000;}
+    color:#000;
+}
 
 .middle .newsletter{
     padding: 70px 8% 70px 8%;
@@ -264,17 +296,18 @@ header .button:hover{
     font-size: 0.85em;
     padding: 1% 5%;
     border: 1px solid #4E5051;
-    color: #000;}
+    color: #000;
+}
 
 .middle .newsletter input::placeholder{
-    color: #000;}
+    color: #000;
+}
 
 .middle .newsletter .button{
     padding: 1%;
     font-size: 0.95em;
     background-color: #343638;
     border: none;
-    
 }
 
 .middle .newsletter .button:hover{
@@ -310,7 +343,8 @@ header .button:hover{
 }
 
 .bottom a{
-    display: block;}
+    display: block;
+}
 
 .bottom a:hover{
     text-decoration: underline;
@@ -324,7 +358,8 @@ header .button:hover{
 }
 
 .bottom p{
-    line-height: 1.8em;}
+    line-height: 1.8em;
+}
 
 .bottom .tweet p:nth-child(2){
     font-style: italic;
@@ -344,12 +379,12 @@ header .button:hover{
     padding-bottom: 10%;
 }
 
-.bottom .flex input{
+.bottom .last-item .flex{
     justify-content: flex-start;
 }
 
-.bottom .last-item input{
-    flex-grow: 2;
+.bottom input{
+    flex: 2 1 auto;
     background-color: #F3F3F3; 
     font-size: 0.9em;
     height: 3em;
@@ -359,10 +394,10 @@ header .button:hover{
     font-style: italic;
 }
 
-.bottom .last-item .button{
-    flex-grow: 1;
+.bottom .button{
+    flex: 1 1 auto;
     padding: 3px 15px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     border: none;
     background-color: #343634;
 }
