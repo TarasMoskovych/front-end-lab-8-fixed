@@ -433,6 +433,11 @@ footer p{
     color: #9E9E9E;
 }
 
+footer ul{
+    display: flex;
+    list-style-type: none;
+}
+
 footer a{
     margin-left: 35px;
     padding: 0 5px 5px 5px;
