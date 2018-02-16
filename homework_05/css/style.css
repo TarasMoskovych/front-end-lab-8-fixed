@@ -110,7 +110,7 @@ footer a:hover{
     color: #fff;}
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 899px) {
     
     header .flex{
         flex-direction: column;
@@ -148,7 +148,7 @@ footer a:hover{
 }
 
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 574px) {
     
     .wrapper{
         max-width: 100%;
