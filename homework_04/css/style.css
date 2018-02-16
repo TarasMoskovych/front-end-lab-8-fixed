@@ -62,10 +62,7 @@ header{
 header .flex{    
     display: flex;
     justify-content: space-between;
-}
-
-header .item{
-    align-self: center;
+    align-items: center;
 }
 
 header .flex p{
@@ -90,7 +87,7 @@ header a:hover{
     border-bottom: 2px solid #A3B0BC;}
 
 header h1{
-    margin-top: 15%;
+    margin-top: 180px;
     font-size: 2.85em;
     letter-spacing: 10px;
     margin-left: 30px;}
@@ -122,7 +119,9 @@ header .button:hover{
 /** main **/
 /** top **/
 .top .flex{
-    justify-content:space-between;}
+    justify-content: space-between;
+    align-items: flex-start;
+}
 
 .top{
     padding: 90px 0 140px 0;
@@ -131,25 +130,23 @@ header .button:hover{
 .top p, .top .flex div{
     flex-basis: 48%;}
 
-.top .item{
-    align-self: flex-start;}
-
 .top .flex div p{
-    font-size: 1.55em;
+    font-size: 1.5em;
     text-align: left;}
 
 .top .flex div p:first-child{
-    margin-bottom: 5px;}
+    padding-bottom: 5px;
+}
 
 .top p:last-child{
-    font-size: 0.85em;
+    font-size: 0.87em;
     text-align: justify;}
 
 
 /** middle **/
 .middle{
     background-color: #F3F3F3;
-    padding-bottom: 160px;}
+    padding-bottom: 180px;}
 
 .middle .layout>h2{
     font-size: 1.55em;
@@ -230,9 +227,10 @@ header .button:hover{
     color:#000;}
 
 .middle .newsletter{
-    padding: 7% 8% 6% 8%;
-    margin-top: 8%;
-    background-color: #fff;}
+    padding: 70px 8% 70px 8%;
+    margin-top: 90px;
+    background-color: #fff;
+}
 
 .middle .outer{
     justify-content: flex-start;
@@ -244,7 +242,7 @@ header .button:hover{
 }
 
 .middle .outer form{
-    flex-grow: 4;
+    flex-grow: 5;
 }
 
 .middle .newsletter p{
@@ -287,7 +285,7 @@ header .button:hover{
 
 /** bottom **/
 .bottom {
-    padding: 100px 0;
+    padding: 100px 0 90px 0;
 }
 
 .bottom .flex{
@@ -304,7 +302,7 @@ header .button:hover{
 }
 
 .bottom .flex>div:last-child{
-   flex-basis: 23%;
+   flex-basis: 20%;
 }
 
 .bottom .flex>div:last-child h3{
@@ -353,9 +351,9 @@ header .button:hover{
 .bottom .last-item input{
     flex-grow: 2;
     background-color: #F3F3F3; 
-    font-size: 0.8em;
-    height: 3.2em;
-    padding: 3px 10px;
+    font-size: 0.9em;
+    height: 3em;
+    padding: 3px 5px 3px 20px;
     border: 1px solid #343638;
     color: #757588;
     font-style: italic;
@@ -363,7 +361,7 @@ header .button:hover{
 
 .bottom .last-item .button{
     flex-grow: 1;
-    padding: 3px 10px;
+    padding: 3px 15px;
     font-size: 0.8em;
     border: none;
     background-color: #343634;
@@ -377,14 +375,14 @@ header .button:hover{
 
 /** footer **/
 footer{
-    padding-bottom: 2%;
+    padding-bottom: 20px;
 }
 
 footer hr{
     border: none;     
     background-color: #F0F0F0; 
     height: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 footer .flex{
@@ -401,10 +399,8 @@ footer p{
 }
 
 footer a{
-
-    margin-left: 25px;
+    margin-left: 35px;
     padding: 0 5px 5px 5px;
-
     color: #000;
 }
 
