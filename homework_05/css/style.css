@@ -1,42 +1,52 @@
 *{
     margin: 0;
-    padding: 0;}
+    padding: 0;
+}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;}
+    font-size: 14px;
+}
 
 .wrapper{
     max-width: 85%;
     margin: 0 auto;
-    padding: 25px 10% 10px 10%;}
+    padding: 25px 10% 10px 10%;
+}
 
 .flex{
-    display: flex;}
+    display: flex;
+}
 
 .grid{
-    display: grid;}
+    display: grid;
+}
 
 a{
-    text-decoration: none;}
+    text-decoration: none;
+}
 
 
 /** header **/
 header .flex{
-    justify-content: flex-start;}
+    justify-content: flex-start;
+}
 
 header nav{
-    margin: 15px 0 0 40px;}
+    margin: 15px 0 0 40px;
+}
 
 header a{
     color: #333;
     font-weight: bold;
     margin: 0 8px;
     text-transform: uppercase;
-    font-size: 1.2em;}
+    font-size: 1.2em;
+}
 
 header a:hover{
-    color: #39c2d7;}
+    color: #39c2d7;
+}
 
 
 /** main **/
@@ -44,14 +54,15 @@ main .banner{
     margin-top: 5px;
     background: url(../img/banner.jpg) no-repeat center;
     background-size: cover;
-    height: 32vw;}
+    height: 375px;
+}
 
 main h1{
     padding-top: 25px;
     color:#fff;
     width: 10em;
-    font-size: calc(1vw + 2em);
-    font-weight: bold;
+    font-size: 2.8em;
+    font-weight: lighter;
     line-height: 1.25em;}
 
 main .grid{
@@ -61,29 +72,29 @@ main .grid{
     grid-row-gap: 1.5em;
     margin: 0 auto;}
 
-main .content .wrapper{
+.content .wrapper{
     padding-top: 1.5em;
     padding-bottom: 1.5em;}
 
-main .content .item{
+.content .item{
     padding: 4%;
     padding-bottom: 6%;
     background-color: #CCCCCC;
     transition: 0.5s;}
 
-main .content .description h3{
+.content .description h3{
     padding: 2% 0;
     color: #333;}
 
-main .content .description p{
+.content .description p{
     color:#464547;
     font-size: 0.96em;
     font-weight: bold;}
 
-main .content img{
+.content img{
     width: 100%;}
 
-main .content .item:hover{
+.content .item:hover{
     background-color: #39c2d7;}
 
 
@@ -119,10 +130,18 @@ footer a:hover{
     header nav{
         margin: 20px 0 10px 0;}
     
+    main .banner{
+    margin-top: 5px;
+    background: url(../img/banner.jpg) no-repeat center;
+    background-size: cover;
+    height: 530px;
+}
+    
     main h1{
-        width: 90%;
+        width: 80%;
         text-align: center;
-        font-size: 2em;
+        font-size: 1.85em;
+       
         margin: 0 auto;}
     
     main .grid{
@@ -189,10 +208,11 @@ footer a:hover{
         margin: 0;
         display: flex;
         align-items: flex-end;
-        height: 45vw;}
+        height: 245px;}
     
     main h1{
-        font-size: calc(1.5vw + 0.8em);
+        width: 90%;
+        font-size: 1.4em;
         text-align: left;
         background-color: #39c2d7;
         padding: 0.7em;}
@@ -217,5 +237,10 @@ footer a:hover{
         margin: 0;}
     
      footer p, footer a{
-        font-size: 0.9em;}
+        font-size: 0.95em;
+        }
+    
+    footer p{
+        padding: 0 2%;
+        text-align: center;}
 }
