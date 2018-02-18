@@ -14,5 +14,7 @@ if(isNaN(eur) || isNaN(usd) || eur <= 0 || usd <= 0){
     var strEur = (eur > 1) ? " euros are" : " euro is";
     var strUsd = (usd > 1) ? " dollars are" : " dollar is";
     
-    console.log(eur +  strEur + " equal " + eurUahResult + " UAH, " + usd +  strUsd + " equal " + usdUahResult + " UAH, one euro is equal " + eurUsdResult + " dollars.");
+    console.log(eur +  strEur + " equal " + eurUahResult + " UAH, " + usd +  
+                strUsd + " equal " + usdUahResult + " UAH, one euro is equal " + 
+                eurUsdResult + " dollars.");
 }
