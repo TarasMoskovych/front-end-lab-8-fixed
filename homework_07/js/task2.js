@@ -20,9 +20,9 @@ while(switcher){
     for(var i = 3; i >= 1; i--){
         victory = false;
         
-        if(i == 3){
+        if(i === 3){
            possiblePrize = maxPrize; 
-        } else if(i == 2){
+        } else if(i === 2){
             possiblePrize = Math.floor(possiblePrize / 2);
         } else{
             possiblePrize = Math.floor(possiblePrize / 2);
@@ -33,7 +33,7 @@ while(switcher){
                                          "\nTotal prize: " + userPrize + "$" + 
                                          "\nPossible prize on current attempt: " + possiblePrize + "$");
 
-        if(userNumber == computerNumber.toString()){
+        if(userNumber === computerNumber.toString()){
            userPrize += possiblePrize;
            victory = true;
            break;   
