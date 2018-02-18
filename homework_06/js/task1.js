@@ -14,11 +14,11 @@ if(isNaN(a) || isNaN(b) || isNaN(c) || a + b <= c || a + c <= b ||  b + c <= a){
 
 
 function getTypeOfTriangle (a, b, c){ 
-    if((a * a + b * b == c * c) || (a * a + c * c == b * b) || (c * c + b * b == a * a)){
+    if((a * a + b * b === c * c) || (a * a + c * c === b * b) || (c * c + b * b === a * a)){
       return "right";  
-    } else if(a == b && b == c ) {
+    } else if(a === b && b === c ) {
         return "equilateral";
-    } else if(a == b || a == c || b == c){
+    } else if(a === b || a === c || b === c){
         return "isosceles";
     } else{
        return "scalene"; 
