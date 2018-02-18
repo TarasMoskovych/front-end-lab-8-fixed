@@ -16,7 +16,7 @@ if(!confirm("Do you want to play a game?")){
 while(switcher){
     computerNumber = Math.floor(Math.random() * (maxValue - 0 + 1)) + 0;
     reset = false;
-  
+    console.log(computerNumber)
     for(var i = 3; i >= 1; i--){
         victory = false;
         
@@ -33,7 +33,7 @@ while(switcher){
                                          "\nTotal prize: " + userPrize + "$" + 
                                          "\nPossible prize on current attempt: " + possiblePrize + "$");
 
-        if(userNumber === computerNumber.toString()){
+        if(Number(userNumber) === computerNumber && !isNaN(parseInt(userNumber))){
            userPrize += possiblePrize;
            victory = true;
            break;   
