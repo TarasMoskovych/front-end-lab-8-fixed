@@ -1,9 +1,7 @@
 function cypherPhrase(obj, str){
     return getTransformedArray(str.split(""), function(item){
-        for(let key in obj){
-            if(item === key){
-                item = obj[key];
-            }
+        if(obj[item]){
+            return obj[item];
         }
         return item;
     }).join("");
