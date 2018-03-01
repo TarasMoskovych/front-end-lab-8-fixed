@@ -52,10 +52,9 @@ function createElement(name, className, text){
     return element;
 }
 
-function display(event){
-    var clicked = event.target || event.srcElement;
-    var children = clicked.parentElement.childNodes;
-    var folderIcon = clicked.getElementsByTagName("i")[0];
+function display(){
+    var children = this.parentElement.childNodes;
+    var folderIcon = this.getElementsByTagName("i")[0];
     
     for(var i = 1; i < children.length; i++){
         if(children[i].classList.contains("shown")) {
