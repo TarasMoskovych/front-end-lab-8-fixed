@@ -6,16 +6,15 @@ appendElement(treeNode, structure, level);
 
 function appendElement(parent, arr, level) {
     for(var i = 0; i < arr.length; i++) {
-        var divParent = createElement("div"); 
+        var divParent = createElement("div");
+        var pElement = createElement("p", "paragraph bg-color level"+level, arr[i].title);
+        var iElement;
         
         if(level === 1){
             divParent.className = "shown";
         } else{
            divParent.className = "hidden"; 
         }
-        
-        var pElement = createElement("p", "paragraph bg-color level"+level, arr[i].title);
-        var iElement;
         
         if(arr[i].folder){
             iElement = createElement("i", "image folder material-icons", "folder"); 
@@ -32,10 +31,10 @@ function appendElement(parent, arr, level) {
         }
         
         if(arr[i].children === null || !arr[i].children) {
-            var div = createElement("div", "hidden"); 
+            var divElement = createElement("div", "hidden"); 
             var pElement = createElement("p", "paragraph text level"+level, "Folder is empty");
-            div.appendChild(pElement);
-            divParent.appendChild(div); 
+            divElement.appendChild(pElement);
+            divParent.appendChild(divElement); 
         }
         parent.appendChild(divParent);
     }
