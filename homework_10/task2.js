@@ -31,17 +31,10 @@ function showResult(fighter) {
   console.log('- Properties:', fighter.getStats());
 }
 
-
 function fighter(attacker) {    
     var combatHistory = {
         wins: 0,
         loses: 0
-    }
-    
-    var stats = {
-        name: attacker.name,
-        attack: attacker.attack,
-        hp: attacker.hp
     }
     
     return{
@@ -51,18 +44,18 @@ function fighter(attacker) {
         
         fight: function(defender) {
             //player who has 0 HP cannot fight
-            if(stats.hp === 0 || defender.getStats().hp === 0){
+            if(attacker.hp === 0 || defender.getStats().hp === 0){
                 return false;
             }
             //defender did not block damage of attacker
             if(!defender.block()){
                 //if defender's hp = 0, defender lost and attacker won
-                if(defender.getStats().hp - stats.attack <= 0){
+                if(defender.getStats().hp - attacker.attack <= 0){
                     defender.getCombatHistory().loses++;
                     combatHistory.wins++;
                     defender.getStats().hp = 0; //defender's hp cannot be less than 0
                 } else{
-                    defender.getStats().hp -= stats.attack;
+                    defender.getStats().hp -= attacker.attack;
                 }
                 return true;
             } 
@@ -75,7 +68,7 @@ function fighter(attacker) {
         },
         
         getStats: function() {
-            return stats;
+            return attacker;
         },
         
         getCombatHistory: function() {
